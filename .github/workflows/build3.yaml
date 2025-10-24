@@ -28,7 +28,6 @@ jobs:
     job4:
         runs-on: ububntu-24.04
         needs:
-            - job2
-            - job3
+            - job1
         steps:
             - run: echo "...creating a sequence of jobs!"
