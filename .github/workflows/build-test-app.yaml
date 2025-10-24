@@ -6,9 +6,9 @@ on:
   pull_request:
     # branches: [ "main" ]
     types:
-      - opened
-      - synchronize
-      - reopened
+      - opened # new pr
+      - synchronize # edited pr
+      - reopened # reopen closed pr
     paths:
       # include markdown diles
       - "README.md"
