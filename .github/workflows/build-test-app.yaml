@@ -1,10 +1,19 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ "main" ]
+  # push:
+  #   branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    # branches: [ "main" ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      # include markdown diles
+      - "README.md"
+      # exclude text files
+      - "!README2.txt"
 
 jobs:
   build:
