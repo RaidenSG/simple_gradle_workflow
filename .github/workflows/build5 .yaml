@@ -1,0 +1,10 @@
+name: Runner types
+on:
+    workflow_dispatch:
+
+jobs:
+    github-hosted-ubuntu-vm:
+        name: Ubuntu 24.04 VM
+        runs-on: ubuntu-24.04
+        steps:
+            - run: ...
