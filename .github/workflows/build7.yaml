@@ -32,6 +32,7 @@ jobs:
 
     sleep-jobs:
         runs-on: ubuntu-24.04
+        needs: matrix-job
         steps:
             - name: Sleep (to give time to be cancelled)
               run: sleep 100 
